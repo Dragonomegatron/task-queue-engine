@@ -18,7 +18,7 @@ A lightweight Python task queue and job scheduler with automatic retry logic, ta
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/task-queue-engine.git
+git clone https://github.com/Dragonomegatron/task-queue-engine.git
 cd task-queue-engine
 ```
 
@@ -106,5 +106,3 @@ Final Task States
 
 MIT License - feel free to use in your projects
 ```
-
-Just replace `yourusername` with your actual GitHub username, and you're ready to go!Just replace `yourusername` with your actual GitHub username, and you're ready to go!
