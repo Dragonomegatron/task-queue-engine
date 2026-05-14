@@ -1,5 +1,6 @@
 import time
 
+
 class Worker:
     def __init__(self, manager, executor):
         self.manager = manager
@@ -8,10 +9,16 @@ class Worker:
     def start(self):
         while True:
             task = self.manager.get_next_task()
+
             if task:
-                self.executor.execute_task(task)
-            else :
+                self.executor.execute(task)
+
+                # save after execution
+                self.manager.save_tasks()
+
+            else:
                 if self.manager.all_done():
-                    print("All tasks completed. Stopping worker.")
+                    print("All tasks completed. Worker stopping.")
                     break
-            time.sleep(1) 
+
+            time.sleep(1)

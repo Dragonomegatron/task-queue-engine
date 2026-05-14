@@ -1,0 +1,38 @@
+[
+    {
+        "id": "df26994d-5ca5-4e34-bd38-610eac715644",
+        "name": "Hello Task",
+        "func_name": "hello",
+        "status": "completed",
+        "result": null,
+        "retries": 0,
+        "max_retries": 2
+    },
+    {
+        "id": "c4fafafc-e43f-4cb4-b237-b2e5a3fc726f",
+        "name": "Addition Task",
+        "func_name": "add",
+        "status": "completed",
+        "result": 5,
+        "retries": 0,
+        "max_retries": 2
+    },
+    {
+        "id": "76996de8-1d15-43ac-88fa-609f8f01e51c",
+        "name": "Crash Task",
+        "func_name": "crash",
+        "status": "failed",
+        "result": "division by zero",
+        "retries": 3,
+        "max_retries": 2
+    },
+    {
+        "id": "e44fef2d-feb0-40f2-b0a4-e44056519132",
+        "name": "Slow Task",
+        "func_name": "slow_task",
+        "status": "completed",
+        "result": "Slow task completed",
+        "retries": 0,
+        "max_retries": 2
+    }
+]

@@ -1,27 +1,16 @@
-from Task import Task
-from TaskManager import TaskManager
-from TaskExecutor import TaskExecutor
-from Worker import Worker
-import time
+def hello():
+    print("Hello World")
 
-def Hello():
-    print("Hello, World!")
 
-def Add():
+def add():
     return 2 + 3
 
-def Breathe():
-    print("Breathe in...")
-    time.sleep(5)
-    print("Breathe out...")
-    time.sleep(5)
-    
-manager = TaskManager()
-executor = TaskExecutor()
-worker = Worker(manager, executor)
 
-manager.add_task(Task("Hello Task", Hello))
-manager.add_task(Task("Add task", Add))
-manager.add_task(Task("Breathe Task", Breathe))
+def crash():
+    return 1 / 0
 
-worker.start()
+
+def slow_task():
+    import time
+    time.sleep(5)
+    return "Slow task completed"
